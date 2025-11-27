@@ -1,0 +1,79 @@
+.features-section {
+  padding: 80px 0;
+  background: #0f0f0f;
+  color: white;
+}
+
+.features-grid {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 350px 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Feature box */
+.feature-box {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.feature-box h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.feature-box h3 span {
+  font-weight: 400;
+  color: #b5b5b5;
+}
+
+.feature-box p {
+  color: #aaa;
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+/* Large faded background numbers */
+.bg-number {
+  position: absolute;
+  font-size: 130px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  top: -80px;
+  pointer-events: none;
+}
+
+/* For LEFT side boxes */
+.feature-box.left .bg-number {
+  left: -50px;   /* Move slightly left */
+}
+
+/* For RIGHT side boxes */
+.feature-box.right .bg-number {
+  right: -50px;  /* Move slightly right */
+  left: auto;     /* Cancel left property */
+}
+
+
+/* Center Image */
+.center-image img {
+  width: 100%;
+  max-width: 350px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Alignments */
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
