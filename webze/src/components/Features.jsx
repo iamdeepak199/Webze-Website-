@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
+import "./Features.css";
 
-
-const FeatureCard = ({ title, text, icon }) => (
-  <div className="feature-card">
+const FeatureCard = ({ title, text, icon, className }) => (
+  <div className={`feature-card ${className || ""}`}>
     {icon && <img src={icon} alt={`${title} icon`} className="feature-icon" />}
-    <div className="thumb" />
     <h4>{title}</h4>
     <p>{text}</p>
   </div>
@@ -15,8 +14,11 @@ export default function Features() {
     <section id="features" className="features">
       <div className="container">
         <div className="section-title">
-          Crypto <span className="muted">development</span> accessible
+          Crypto <span className="muted">development</span> 
+          <br></br>accessible
+          <br></br>
         </div>
+        <br></br>
         <div className="feature-grid">
           <FeatureCard
             title="Crypto management"
@@ -28,8 +30,10 @@ export default function Features() {
             text="A built-in explorer to track transactions"
             icon="/images/features_icon02.png"
           />
+          </div>
+          <div className="lowerCard">
           <FeatureCard
-            title="Data encryption"
+            title="Advanced trading"
             text="Visual dashboards for trade performance"
             icon="/images/features_icon03.png"
           />
@@ -38,12 +42,13 @@ export default function Features() {
             text="Regular updates on crypto trends and platform features."
             icon="/images/features_icon04.png"
           />
-          <FeatureCard
+           <FeatureCard
             title="Cold wallet storage"
             text="Regular updates on crypto trends and platform features."
             icon="/images/features_icon05.png"
           />
-        </div>
+          </div>
+        
       </div>
     </section>
   );

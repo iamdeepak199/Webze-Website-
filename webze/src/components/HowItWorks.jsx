@@ -35,6 +35,12 @@ export default function Features() {
 
   return (
     <section className="features-section">
+      <p className="small-label">HOW IT WORKS?</p>
+
+      <h2 className="main-title">
+        Core asset of the <span className="muted">crypto</span><br></br> marketplace
+      </h2>
+
       <div className="features-grid">
         {/* LEFT ITEMS */}
         <div className="left-items">
@@ -51,7 +57,8 @@ export default function Features() {
 
         {/* CENTER IMAGE */}
         <div className="center-image">
-          <img src="../images/center.png" alt="feature-middle" />
+          {/* PUT YOUR CENTER IMAGE HERE */}
+          <img src="/images/center.png" alt="center-feature" />
         </div>
 
         {/* RIGHT ITEMS */}
@@ -65,6 +72,34 @@ export default function Features() {
               <p>{item.text}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* EXCHANGE BOX */}
+      <div className="exchange-box">
+        <div className="ex-left">
+          <img src="/images/hero_img03.png" alt="exchange-icon" />
+          <div>
+            <h4>
+              Exchange <span>availability</span>
+            </h4>
+            <p>AI-powered tools to detect and prevent fraudulent activities.</p>
+          </div>
+        </div>
+
+        <div className="ex-right">
+          <div className="circle">
+          <img src="/images/Ethereum logo with t.png" alt="btc" />
+          </div>
+          <div className="circle">
+          <img src="/images/Ethereum logo with t2.png" alt="eth" />
+          </div>
+          <div className="circle">
+          <img src="/images/Exchange_icon03.png" alt="sol" />
+          </div>
+          <div className="circle">
+          <img src="/images/Avalanche logo with .png" alt="avax" />
+          </div>
         </div>
       </div>
     </section>

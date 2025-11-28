@@ -1,4 +1,5 @@
 import React from "react";
+import './Navbar.css';
 
 export default function Navbar() {
   return (
@@ -9,12 +10,12 @@ export default function Navbar() {
           <div className="brand">
             <div className="logo-mark">
               <img
-                src="/logo.svg"
+                src="/logoP.png"
                 alt="Logo"
               />
             </div>
 
-            <div className="brand-text"></div>
+            <div className="brand-text">PIOGOLD</div>
           </div>
 
           <nav className="nav">

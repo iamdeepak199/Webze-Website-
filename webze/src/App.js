@@ -8,6 +8,8 @@ import HowItWorks from "./components/HowItWorks";
 import Contact from "./components/Contact";
 
 import "./App.css";
+import ShowcaseSection from "./components/ShowcaseSection";
+import PromoSection from "./components/PromoSection";
 
 export default function App() {
   return (
@@ -22,7 +24,9 @@ export default function App() {
               <>
                 <Hero />
                 <Features />
+                <PromoSection/>
                 <HowItWorks />
+                <ShowcaseSection/>
               </>
             }
           />

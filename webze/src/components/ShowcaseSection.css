@@ -1,0 +1,184 @@
+/* MAIN CONTAINER */
+.showcase-container {
+  width: 100%;
+  padding: 80px 0;
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+}
+
+/* Section Label */
+.section-label {
+  display: inline-block;
+  background: #272727;
+  color: #f5b844;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+/* Headings */
+.main-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.main-heading span {
+  color: #f5b844;
+}
+
+/* CARDS ROW */
+.cards-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* ⭐ INDIVIDUAL CARD */
+.info-card {
+  width: 280px;
+  height: 350px;
+  background: #121212;
+  border: 1px solid #272727;
+  border-radius: 14px;
+  padding: 30px 25px;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  border-color: #f5b844;
+}
+
+/* ⭐ FIXED IMAGE WRAPPER (Ensures Equal Size) */
+.card-img-wrapper {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+/* ⭐ UPDATED CARD IMAGE */
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.info-card:hover .card-img {
+  transform: rotateY(180deg);
+}
+
+/* ⭐ UPDATED TEXT */
+.info-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #b5b5b5;
+  margin-bottom: 20px;
+}
+
+/* ⭐ UPDATED BUTTON */
+.card-btn {
+  padding: 8px 16px;
+  background: #f5b844;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* FAQ SECTION */
+.faq-section {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+}
+
+.faq-left img {
+  width: 340px;
+}
+
+.faq-right {
+  max-width: 400px;
+  text-align: left;
+}
+
+.faq-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.faq-title span {
+  color: #f5b844;
+}
+
+.faq-box {
+  background: #121212;
+  border: 1px solid #272727;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.faq-box summary {
+  font-size: 16px;
+}
+
+.faq-box p {
+  font-size: 14px;
+  color: #c8c8c8;
+  margin-top: 10px;
+}
+
+/* TIMELINE */
+.timeline-row {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.timeline-step {
+  width: 180px;
+}
+
+.timeline-img {
+  width: 70px;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
+}
+
+.timeline-step:hover .timeline-img {
+  transform: rotateY(180deg);
+}
+
+.timeline-step h4 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.timeline-step p {
+  font-size: 14px;
+  color: #b5b5b5;
+}

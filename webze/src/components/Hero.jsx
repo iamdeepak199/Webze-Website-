@@ -10,12 +10,12 @@ export default function Hero() {
         <h1 className="hero-title">
           The <span className="muted">future</span> of
           <br />
-          leverage is here
+          Crypto is here
         </h1>
         <br></br>
         <p className="hero-sub">
-          Leverage on any tokens with a protocol trusted with billions
-          <br /> for its performance and reliability.
+          a Gold backend native coin of PIOGOLD blockchain with
+          <br />complete advanced wcosystem.
         </p>
         <form className="hero-form" onSubmit={(e) => e.preventDefault()}>
           <div className="input-wrapper full">
