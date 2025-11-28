@@ -13,11 +13,10 @@ export default function Features() {
   return (
     <section id="features" className="features">
       <div className="container">
-        <div className="section-title">
-          Crypto <span className="muted">development</span> 
-          <br></br>accessible
-          <br></br>
-        </div>
+       
+          Crypto <span className="muted-title">development</span>
+          <br />
+          accessible
         <br></br>
         <div className="feature-grid">
           <FeatureCard
@@ -30,8 +29,8 @@ export default function Features() {
             text="A built-in explorer to track transactions"
             icon="/images/features_icon02.png"
           />
-          </div>
-          <div className="lowerCard">
+        </div>
+        <div className="lowerCard">
           <FeatureCard
             title="Advanced trading"
             text="Visual dashboards for trade performance"
@@ -42,13 +41,12 @@ export default function Features() {
             text="Regular updates on crypto trends and platform features."
             icon="/images/features_icon04.png"
           />
-           <FeatureCard
+          <FeatureCard
             title="Cold wallet storage"
             text="Regular updates on crypto trends and platform features."
             icon="/images/features_icon05.png"
           />
-          </div>
-        
+        </div>
       </div>
     </section>
   );

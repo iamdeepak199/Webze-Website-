@@ -1,0 +1,115 @@
+.join-section {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-color: #0f0f0f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 0 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.floating-shape {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.7));
+  animation: float 6s ease-in-out infinite;
+}
+
+.left-shape {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-shape {
+  right: 20px;
+  top: 30%;
+  transform: translateY(-50%);
+  animation-delay: 3s; /* offset animation */
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-50%) translateY(0);
+  }
+  50% {
+    transform: translateY(-50%) translateY(-15px);
+  }
+}
+
+.content {
+  max-width: 650px;
+  z-index: 2;
+}
+
+.small-label {
+  background: #272727;
+  color: #f5b844;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.main-heading {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  color: white;
+}
+
+.main-heading .highlight {
+  font-weight: 900;
+  color: #444; /* dark grey for the "future" word */
+  opacity: 0.6;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon-link img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+.icon-link:hover img {
+  filter: brightness(0) invert(0.8) sepia(1) saturate(5) hue-rotate(40deg);
+  /* subtle golden hover effect */
+  cursor: pointer;
+}
+/* The horizontal line behind the timeline icons */
+.timeline-row::before {
+  content: "";
+  position: absolute;
+  top: 25%;           /* vertically center the line */
+  left: 5%;           /* start slightly inset */
+  right: 5%;          /* end slightly inset */
+  height: 2px;        /* thickness of the line */
+  background: rgba(245, 184, 68, 0.3); /* a soft gold line with some transparency */
+  z-index: 0;         /* behind the icons */
+  transform: translateY(-50%);  /* perfectly center on the y-axis */
+}
+
+/* Ensure timeline-step (icons) are above the line */
+.timeline-step {
+  position: relative; /* needed to keep above ::before line */
+  z-index: 1;
+}

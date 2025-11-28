@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Hero.css";
 
 export default function Hero() {
   return (
@@ -7,20 +8,22 @@ export default function Hero() {
       <div className="container hero-inner">
         <div className="hero-badge">BUILT ON WEB3. POWERED BY YOU</div>
 
-        <h1 className="hero-title">
-          The <span className="muted">future</span> of
-          <br />
-          Crypto is here
-        </h1>
-        <br></br>
+       <h1 className="hero-title">
+  The <span className="muted">future</span> of
+  <br />
+  Crypto is here
+</h1>
+
+<br></br>
         <p className="hero-sub">
           a Gold backend native coin of PIOGOLD blockchain with
-          <br />complete advanced wcosystem.
+          <br /> complete advanced ecosystem.
         </p>
+
         <form className="hero-form" onSubmit={(e) => e.preventDefault()}>
           <div className="input-wrapper full">
             <img src="/images/mail.png" alt="Mail Icon" className="mail-icon" />
-            
+
             <input
               type="email"
               placeholder="Business email"
@@ -37,6 +40,7 @@ export default function Hero() {
             msg us!
           </Link>
         </p>
+
         <div className="hero-3d-left">
           <img src="/images/hero_img01.png" alt="Left decoration" />
         </div>
@@ -44,8 +48,9 @@ export default function Hero() {
         <div className="hero-3d-right">
           <img src="/images/hero_img03.png" alt="Right decoration" />
         </div>
+
         <div className="hero-3d-center">
-          <img src="/images/A black geometric lo.png" alt="center decoration" />
+          <img src="/images/A black geometric lo.png" alt="Center deco" />
         </div>
       </div>
     </section>

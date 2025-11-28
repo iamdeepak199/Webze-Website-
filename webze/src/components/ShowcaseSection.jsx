@@ -4,18 +4,18 @@ import "./ShowcaseSection.css";
 export default function ShowcaseSection() {
   const cards = [
     {
-      title: "Read our white paper",
-      text: "Over whitepaper",
+      title: "Read our",
+      subtitle: "Over whitepaper",
       image: "/images/crypto_icon01.png",
     },
     {
       title: "1 CRN token price",
-      text: "0.00014 BTC",
+      subtitle: "0.00014 BTC",
       image: "/images/crypto_icon02.png",
     },
     {
       title: "ICO Participants",
-      text: "370,000+",
+      subtitle: "370,000+",
       image: "/images/crypto_icon03.png",
     },
   ];
@@ -49,13 +49,14 @@ export default function ShowcaseSection() {
         {cards.map((c, i) => (
           <div className="info-card" key={i}>
 
-            {/* ⭐ FIXED IMAGE WRAPPER */}
             <div className="card-img-wrapper">
               <img src={c.image} alt="" className="card-img" />
             </div>
 
             <h3>{c.title}</h3>
-            <p>{c.text}</p>
+            {/* ⭐ SUBTITLE WITH .muted CLASS */}
+            <p className="muted">{c.subtitle}</p>
+
             <button className="card-btn">VIEW MORE</button>
           </div>
         ))}

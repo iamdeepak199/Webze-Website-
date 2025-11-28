@@ -1,0 +1,273 @@
+/* ------------------------------------
+   HERO SECTION
+------------------------------------ */
+
+.hero {
+  padding: 80px 0 120px;
+  position: relative;
+}
+
+.hero-inner {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,200,120,0.08);
+  border: 1px solid rgba(255,200,120,0.12);
+  padding: 6px 12px;
+  border-radius: 18px;
+  color: var(--accent);
+  font-size: 12px;
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+
+.hero-title {
+  font-size: 64px;
+  line-height: 0.95;
+  margin: 6px 0;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-title .muted {
+  color: #6f6f6f;
+}
+
+.hero-sub {
+  color: var(--muted);
+  max-width: 820px;
+  margin: 10px auto 24px;
+  font-size: 18px;
+}
+
+/* ------------------------------------
+   HERO FORM
+------------------------------------ */
+
+.hero-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.input-wrapper.full {
+  position: relative;
+  width: 480px;
+  display: flex;
+  align-items: center;
+}
+
+.mail-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.input-wrapper.full input {
+  width: 100%;
+  padding: 16px 150px 16px 48px;
+  background: #0e0e0f;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 40px;
+  color: #e6e6e6;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-wrapper.full input:focus {
+  border-color: var(--accent);
+}
+
+.btn-inside {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 17px 20px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-inside:hover {
+  background: var(--accent-2);
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* ------------------------------------
+   FLOATING DECOR IMAGES
+------------------------------------ */
+
+.hero-3d-left,
+.hero-3d-right {
+  position: absolute;
+  bottom: 40px;
+  width: 180px;
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+.hero-3d-left {
+  left: 30px;
+}
+
+.hero-3d-right {
+  right: 30px;
+}
+
+.hero-3d-left img,
+.hero-3d-right img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------------------------------------
+   CENTER ROTATING IMAGE
+------------------------------------ */
+
+.hero-3d-center {
+  position: relative;
+  width: 50%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  animation: floatCircle 40s linear infinite;
+}
+
+.hero-3d-center img {
+  max-width: 65%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* ------------------------------------
+   ANIMATIONS
+------------------------------------ */
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floatCircle {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(270deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+  }
+}
+
+/* ------------------------------------
+   RESPONSIVE
+------------------------------------ */
+
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .input-wrapper.full {
+    width: 300px;
+  }
+
+  .hero-3d-left,
+  .hero-3d-right {
+    width: 120px;
+  }
+}
+/* ------------------------------------
+   HERO FORM
+------------------------------------ */
+.hero-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.input-wrapper.full {
+  width: 480px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mail-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.input-wrapper.full input {
+  width: 100%;
+  padding: 16px 150px 16px 48px;
+  background: #0e0e0f;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 40px;
+  color: #e6e6e6;
+  font-size: 16px;
+  outline: none;
+}
+.input-wrapper.full input:focus { border-color: var(--accent); }
+
+.btn-inside {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 17px 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+.btn-inside:hover {
+  background: var(--accent-2);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.hero-title .muted {
+  color: #7b7b7b !important;   /* gold color */
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
