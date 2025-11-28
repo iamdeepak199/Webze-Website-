@@ -20,30 +20,30 @@ export default function Features() {
         <br></br>
         <div className="feature-grid">
           <FeatureCard
-            title="Crypto management"
-            text="Automated identity verification and anti-money"
+            title="Ultra-Fast Transaction Speed"
+            text="Pio Blockchain processes transactions in real-time, ensuring instant confirmations for users and applications."
             icon="/images/features_icon01.png"
           />
           <FeatureCard
-            title="Crypto exchange"
-            text="A built-in explorer to track transactions"
+            title="Low Gas Fees"
+            text="Experience cost-effective transactions with minimal fees, making it ideal for high-volume operations."
             icon="/images/features_icon02.png"
           />
         </div>
         <div className="lowerCard">
           <FeatureCard
-            title="Advanced trading"
-            text="Visual dashboards for trade performance"
+            title="Secure Proof-of-Authority/Delegated Consensus"
+            text="Utilizes a robust consensus mechanism to maintain network integrity and protect against attacks."
             icon="/images/features_icon03.png"
           />
           <FeatureCard
-            title="Cold wallet storage"
-            text="Regular updates on crypto trends and platform features."
+            title="User & Developer Friendly"
+            text="Offers intuitive tools and flexible infrastructure, enabling smooth adoption for developers and end-users."
             icon="/images/features_icon04.png"
           />
           <FeatureCard
-            title="Cold wallet storage"
-            text="Regular updates on crypto trends and platform features."
+            title="Sustainable & Energy Efficient"
+            text="Designed with eco-conscious protocols, reducing energy consumption without compromising performance."
             icon="/images/features_icon05.png"
           />
         </div>

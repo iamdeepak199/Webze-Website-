@@ -8,11 +8,22 @@ export default function PromoSection() {
         {/* Left Side */}
         <div className="promo-left">
           <h2>ACCESSIBLE FOR EVERYONE</h2>
-          <h3>Trading platform of the future!</h3>
+          <h3>PIOGOLD is the native coin of the Pio Blockchain, powering:</h3>
+
           <p>
-            Webzi brings our love for cryptocurrency into Web3! Like a frog's
-            leap, the chart can jump at any moment. Boom!
+            The trading platform of the future, designed to make cryptocurrency simple, fast, and secure for all.
           </p>
+
+          <ul>
+            <li>Transaction fees & network security</li>
+            <li>Staking & rewards</li>
+            <li>Payments & settlements</li>
+            <li>Governance & ecosystem utilities</li>
+            <li>Web3 applications & NFT marketplace support</li>
+          </ul>
+
+          <p>Take control of your finances anytime, anywhere.</p>
+
           <button className="cta-button">PURCHASE NOW</button>
         </div>
 
@@ -21,7 +32,6 @@ export default function PromoSection() {
           <div className="promo-card">
             <div className="countdown">
               <h4>Token sale ends in:</h4>
-
               <div className="timer">
                 <div className="time-circle">
                   <h2>396</h2>

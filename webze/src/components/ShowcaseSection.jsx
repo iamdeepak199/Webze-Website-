@@ -9,7 +9,7 @@ export default function ShowcaseSection() {
       image: "/images/crypto_icon01.png",
     },
     {
-      title: "1 CRN token price",
+      title: "1 PIO token price",
       subtitle: "0.00014 BTC",
       image: "/images/crypto_icon02.png",
     },
@@ -21,19 +21,31 @@ export default function ShowcaseSection() {
   ];
 
   const faqData = [
-    {
-      q: "Main purpose of a cryptocurrency",
-      a: "The private keys stored allow you to sign transactions and prove ownership of funds.",
-    },
-    { q: "How can I make refund?", a: "Refund rules depend on the platform terms." },
-    { q: "How do they operate on blockchain?", a: "Blockchain works as a decentralized ledger." },
-  ];
+
+  { 
+    q: "What is PIOGOLD (PIO) and its main purpose?", 
+    a: "PIOGOLD is the native cryptocurrency of Pio Blockchain, used for fast, secure transactions, staking, payments, governance, and Web3 applications." 
+  },
+  { 
+    q: "What is Pio Blockchain?", 
+    a: "Pio Blockchain is a fast, low-cost, and secure decentralized network for building scalable Web3 products." 
+  },
+  { 
+    q: "How does PIOGOLD work on the blockchain?", 
+    a: "PIOGOLD runs on Pio Blockchain, enabling secure payments, staking, governance, and interaction with dApps and NFT marketplaces." 
+  },
+  { 
+    q: "Can I get a refund for PIOGOLD transactions?", 
+    a: "Refunds depend on the platform used, as blockchain transactions are generally irreversible." 
+  }
+];
+
 
   const timeline = [
-    { year: "2014", text: "Definitions of key terms in cryptocurrency", img: "/images/roadmap_icon01.png" },
-    { year: "2017", text: "Automated tools for executing strategies", img: "/images/roadmap_icon02.png" },
-    { year: "2022", text: "APIs for developers to build custom tools", img: "/images/roadmap_icon03.png" },
-    { year: "2025", text: "A space for users to discuss trends", img: "/images/roadmap_icon04.png" },
+   { year: "2025", text: "Definitions of key terms in cryptocurrency", img: "/images/roadmap_icon01.png" },
+    { year: "2026", text: "Automated tools for executing strategies", img: "/images/roadmap_icon02.png" },
+    { year: "2027", text: "APIs for developers to build custom tools", img: "/images/roadmap_icon03.png" },
+    { year: "2028", text: "A space for users to discuss trends", img: "/images/roadmap_icon04.png" }
   ];
 
   return (

@@ -27,7 +27,18 @@
 .App-link {
   color: #61dafb;
 }
-
+.site-footer{
+  text-align: center;
+}
+.vertical-line {
+  border: none; 
+  border-top: 1px solid #7d7b7b; 
+  width: 80%; 
+  margin: 20px auto; 
+}
+.color-text{
+  color: darkgoldenrod;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

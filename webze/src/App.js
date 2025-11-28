@@ -35,8 +35,9 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-
-      <footer className="site-footer">© 2025 Webze Replica</footer>
+      <div className="vertical-line"> </div>
+      <footer className="site-footer">Copyright & design by <span className="color-text">@PIOGOLD COIN - 2025</span></footer>
+      <br></br>
     </div>
   );
 }

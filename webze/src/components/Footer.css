@@ -79,37 +79,57 @@
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* centers the icons horizontally */
+  align-items: center;     /* centers vertically */
   gap: 30px;
+  margin: 0 auto;          /* ensures it’s centered */
+}
+
+/* Icon styles */
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 8px rgba(245, 184, 68, 0.3);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
 }
 
 .icon-link img {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   filter: brightness(0) invert(1);
   transition: filter 0.3s ease;
 }
 
-.icon-link:hover img {
-  filter: brightness(0) invert(0.8) sepia(1) saturate(5) hue-rotate(40deg);
-  /* subtle golden hover effect */
-  cursor: pointer;
+.icon-link:hover {
+  background: rgba(245, 184, 68, 0.15);
+  box-shadow: 0 0 15px rgba(245, 184, 68, 0.6);
 }
-/* The horizontal line behind the timeline icons */
+
+.icon-link:hover img {
+  filter: brightness(0) invert(0.9) sepia(1) saturate(5) hue-rotate(40deg);
+}
+
+/* Timeline horizontal line */
 .timeline-row::before {
   content: "";
   position: absolute;
-  top: 25%;           /* vertically center the line */
-  left: 5%;           /* start slightly inset */
-  right: 5%;          /* end slightly inset */
-  height: 2px;        /* thickness of the line */
-  background: rgba(245, 184, 68, 0.3); /* a soft gold line with some transparency */
-  z-index: 0;         /* behind the icons */
-  transform: translateY(-50%);  /* perfectly center on the y-axis */
+  top: 25%;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background: rgba(245, 184, 68, 0.3);
+  z-index: 0;
+  transform: translateY(-50%);
 }
 
-/* Ensure timeline-step (icons) are above the line */
+/* Timeline steps */
 .timeline-step {
-  position: relative; /* needed to keep above ::before line */
+  position: relative;
   z-index: 1;
 }

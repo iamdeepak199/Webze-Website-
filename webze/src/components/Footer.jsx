@@ -13,14 +13,14 @@ export default function JoinSection() {
     <section className="join-section">
       {/* Left 3D shape */}
       <img
-        src="/images/hero_img03.png" // replace with your actual image path
+        src="/images/hero_img03.png"
         alt="Left floating shape"
         className="floating-shape left-shape"
       />
 
       {/* Right 3D shape */}
       <img
-        src="/images/footer_shape01.png" // replace with your actual image path
+        src="/images/footer_shape01.png"
         alt="Right floating shape"
         className="floating-shape right-shape"
       />
@@ -31,12 +31,14 @@ export default function JoinSection() {
 
         <h1 className="main-heading">
           Join with our <span className="highlight">future</span> of <br />
-          Webzo currency
+          PIOGOLD COIN's
         </h1>
 
+        {/* Social Icons */}
         <div className="social-icons">
           {socialIcons.map((icon, idx) => (
             <a
+              key={idx}
               href="https://facebook.com"
               aria-label={icon.alt}
               className="icon-link"
@@ -46,8 +48,10 @@ export default function JoinSection() {
               <img src={icon.src} alt={icon.alt} />
             </a>
           ))}
-          <div className="timeline-step"></div>
         </div>
+
+        {/* Timeline Step (optional, outside social icons) */}
+        <div className="timeline-step"></div>
       </div>
     </section>
   );

@@ -24,13 +24,11 @@
   font-weight: 700;
   margin-bottom: 60px;
 }
-.main-title .muted {
-  font-size: 50px;
+.muted {
+   font-size: 50px;
   font-weight: 700;
   margin-bottom: 40px;
 }
-
-
 /* GRID */
 .features-grid {
   display: flex;
