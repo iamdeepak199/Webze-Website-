@@ -1,5 +1,6 @@
 import React from "react";
 import './Navbar.css';
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function Navbar() {
   return (
@@ -9,22 +10,18 @@ export default function Navbar() {
 
           <div className="brand">
             <div className="logo-mark">
-              <img
-                src="/logoP.png"
-                alt="Logo"
-              />
+              <img src="/logoP.png" alt="Logo" />
             </div>
-
             <div className="brand-text">PIOGOLD</div>
           </div>
 
           <nav className="nav">
-            <a href="#home">HOME</a>
-            <a href="#features">FEATURES</a>
-            <a href="#token">TOKEN</a>
-            <a href="#how">HOW IT WORKS</a>
-            <a href="#roadmap">ROADMAP</a>
-            <a href="#blog">BLOG</a>
+            <Link smooth to="#home">HOME</Link>
+            <Link smooth to="#features">FEATURES</Link>
+            <Link smooth to="#token">TOKEN</Link>
+            <Link smooth to="#how">HOW IT WORKS</Link>
+            <Link smooth to="#roadmap">ROADMAP</Link>
+            <Link smooth to="#blog">BLOG</Link>
           </nav>
 
           <div className="cta">

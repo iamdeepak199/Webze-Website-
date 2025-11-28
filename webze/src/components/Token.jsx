@@ -1,5 +1,5 @@
 import React from "react";
-import "./PromoSection.css";
+import "./Token.css";
 
 export default function PromoSection() {
   return (

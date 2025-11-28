@@ -1,16 +1,16 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 import Features from "./components/Features";
 import HowItWorks from "./components/HowItWorks";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollTop";
 
 import "./App.css";
-import ShowcaseSection from "./components/ShowcaseSection";
-import PromoSection from "./components/PromoSection";
+import Roadmap from "./components/Roadmap";
+import Token from "./components/Token";
 
 export default function App() {
   return (
@@ -23,21 +23,45 @@ export default function App() {
             path="/"
             element={
               <>
-                <Hero />
-                <Features />
-                <PromoSection/>
-                <HowItWorks />
-                <ShowcaseSection/>
-                <Footer/>
+                <section id="home">
+                  <Home />
+                </section>
+
+                <section id="features">
+                  <Features />
+                </section>
+
+                <section id="token">
+                  <Token />
+                </section>
+
+                <section id="how">
+                  <HowItWorks />
+                </section>
+
+                <section id="roadmap">
+                  <Roadmap />
+                </section>
+
+                <section id="blog">
+                  <Footer /> {/* If you have a Blog component, replace it */}
+                </section>
               </>
             }
           />
+
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-      <div className="vertical-line"> </div>
-      <footer className="site-footer">Copyright & design by <span className="color-text">@PIOGOLD COIN - 2025</span></footer>
-      <br></br>
+        <ScrollToTop />
+
+      <div className="vertical-line"></div>
+
+      <footer className="site-footer">
+        Copyright & design by{" "}
+        <span className="color-text">@PIOGOLD COIN - 2025</span>
+      </footer>
+      <br />
     </div>
   );
 }
