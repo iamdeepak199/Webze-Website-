@@ -75,7 +75,7 @@
 }
 
 .muted-title {
- color: #7b7b7b !important;   /* gold color */
+ color: #7b7b7b ; 
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 40px;

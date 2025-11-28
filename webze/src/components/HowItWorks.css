@@ -20,6 +20,7 @@
 
 /* MAIN TITLE */
 .main-title {
+  color: 7b7b7b7b;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 60px;
@@ -126,15 +127,22 @@
 .ex-left {
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start; /* changed from center to flex-start */
 }
 
 .ex-left img {
   width: 60px;
+  flex-shrink: 0; /* prevent icon from shrinking */
+}
+
+.ex-left div {
+  display: flex;
+  flex-direction: column;
 }
 
 .ex-left h4 {
   font-size: 18px;
+  margin: 0;
 }
 
 .ex-left h4 span {
@@ -144,6 +152,7 @@
 .ex-left p {
   color: #828282;
   font-size: 14px;
+  margin-top: 4px; /* spacing below h4 */
 }
 
 /* EXCHANGE RIGHT (ICONS) */
@@ -157,12 +166,13 @@
   width: 45px;
   height: 45px;
 }
+
 /* CIRCULAR BOXES */
 .circle {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  padding: 0px,10px,10px,0px;
+  padding: 0px 10px;
   border: 1px solid rgba(147, 147, 146, 0.3);
   background: rgba(255, 255, 255, 0.03);
   display: flex;
@@ -170,5 +180,12 @@
   justify-content: center;
   align-items: center;
 }
+.alingment h4 span {
+  color: #f5b844;
+}
 
-
+.alingment p {
+  color: #828282;
+  font-size: 14px;
+  margin-top: 4px; /* spacing below h4 */
+}

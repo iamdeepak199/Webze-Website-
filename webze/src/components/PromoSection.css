@@ -72,11 +72,15 @@
 /* RIGHT SIDE CARD */
 .promo-card {
   background: #111;
-  padding: 30px;
+  padding: 40px 30px; /* increased top/bottom padding for more height */
   border-radius: 20px;
-  width: 380px;
+  width: 450px;
+  min-height: 500px; /* slightly taller card */
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* spreads content nicely */
 }
 
 /* COUNTDOWN HEADER */

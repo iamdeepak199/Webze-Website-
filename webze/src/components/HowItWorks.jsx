@@ -79,7 +79,7 @@ export default function Features() {
       <div className="exchange-box">
         <div className="ex-left">
           <img src="/images/hero_img03.png" alt="exchange-icon" />
-          <div>
+          <div className="alingment">
             <h4>
               Exchange <span>availability</span>
             </h4>

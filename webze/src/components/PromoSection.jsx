@@ -31,7 +31,7 @@ export default function PromoSection() {
         <div className="promo-right">
           <div className="promo-card">
             <div className="countdown">
-              <h4>Token sale ends in:</h4>
+              <h4>Token sale ends in:</h4><br></br>
               <div className="timer">
                 <div className="time-circle">
                   <h2>396</h2>
