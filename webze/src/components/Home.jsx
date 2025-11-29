@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="container hero-inner">
         <div className="hero-badge">BUILT ON WEB3. POWERED BY YOU</div>
 
-       <h1 className="hero-title">
+      <h1 className="hero-title">
   The <span className="muted">future</span> of
   <br />
   Crypto is here

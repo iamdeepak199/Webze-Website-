@@ -115,6 +115,79 @@
 }
 
 /* FAQ SECTION */
+/* ================================
+   FAQ MOBILE STYLE (Exact Copy)
+================================ */
+
+.faq-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px 20px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.faq-box summary {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-box summary::after {
+  content: "+";
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.faq-box[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-box p {
+  font-size: 15px;
+  color: #cfcfcf;
+  margin-top: 10px;
+  line-height: 24px;
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+  .faq-section {
+    flex-direction: column;
+    text-align: left;
+    gap: 0px;
+  }
+
+  .faq-left {
+    display: none; /* Hide image in mobile */
+  }
+
+  .faq-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .faq-box summary {
+    font-size: 17px;
+  }
+
+  .faq-box {
+    padding: 16px 18px;
+  }
+
+}
 .faq-section {
   margin-top: 120px;
   display: flex;
@@ -160,32 +233,56 @@
   margin-top: 10px;
 }
 
-/* TIMELINE */
+/* ==============================
+   TIMELINE RESPONSIVE FIX
+============================== */
+
+/* Desktop Timeline */
 .timeline-row {
-  margin-top: 60px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 60px;
+  position: relative;
+}
+
+/* Horizontal line behind icons */
+.timeline-row::before {
+  content: "";
+  position: absolute;
+  top: 50%;          /* center line vertically */
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background: rgba(245, 184, 68, 0.3);
+  z-index: 0;
+  transform: translateY(-50%);
 }
 
 .timeline-step {
-  width: 180px;
+  position: relative; /* to stay above line */
+  z-index: 1;
+  flex-shrink: 0;
+  text-align: center;
 }
 
+/* Timeline images */
 .timeline-img {
   width: 70px;
+  height: 70px;
+  object-fit: contain;
   margin-bottom: 10px;
-  transition: transform 0.4s ease; /* smooth float */
+  transition: transform 0.4s ease;
 }
 
 .timeline-step:hover .timeline-img {
-  transform: translateY(-6px); /* slight upward movement on hover */
+  transform: translateY(-6px);
 }
 
 .timeline-step h4 {
   margin-top: 10px;
-  color: #f5b844;
   font-size: 20px;
+  color: #f5b844;
 }
 
 .timeline-step p {
@@ -193,36 +290,214 @@
   color: #b5b5b5;
 }
 
-.muted {
-  color: #7b7b7b;
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 40px;
+/* -------------------------------
+   MOBILE TIMELINE
+------------------------------- */
+@media (max-width: 768px) {
+  .timeline-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* Remove horizontal line */
+  .timeline-row::before {
+    display: none;
+  }
+
+  .timeline-step {
+    width: auto;
+  }
+
+  .timeline-img {
+    width: 50px;   /* smaller icons on mobile */
+    height: 50px;
+  }
+
+  .timeline-step h4 {
+    font-size: 18px;
+  }
+
+  .timeline-step p {
+    font-size: 13px;
+  }
 }
-.timeline-row {
-  position: relative;  /* to position line absolutely inside */
-  margin-top: 60px;
+
+/* Optional: Small mobile (phones <480px) */
+@media (max-width: 480px) {
+  .timeline-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .timeline-step h4 {
+    font-size: 16px;
+  }
+
+  .timeline-step p {
+    font-size: 12px;
+  }
+}
+
+/* New Modern Card Section */
+.new-cards {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.new-card {
+  width: 260px;
+  height: 380px;
+  background: #111;
+  border-radius: 25px;
+  padding: 40px 20px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new-card:hover {
+  transform: translateY(-10px);
+  background: #161616;
+  border-color: rgba(255,255,255,0.15);
+}
+
+.new-card-icon img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.new-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.new-card-subtitle {
+  font-size: 17px;
+  opacity: 0.7;
+}
+
+.new-card-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.new-card-btn:hover {
+  background: #ffc53d;
+  color: #000;
+  border-color: #ffc53d;
+}
+
+/* TIMELINE BASE STYLES (desktop stays same) */
+.timeline-item {
+  display: flex;
   align-items: center;
+  gap: 40px;
+  margin-bottom: 70px;
+  position: relative;
 }
 
-/* The horizontal line behind the timeline icons */
-.timeline-row::before {
-  content: "";
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-item img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.timeline-line {
+  width: 5px;
+  background: #f3c13a;
+  height: 100%;
   position: absolute;
-  top: 25%;           /* vertically center the line */
-  left: 5%;           /* start slightly inset */
-  right: 5%;          /* end slightly inset */
-  height: 2px;        /* thickness of the line */
-  background: rgba(245, 184, 68, 0.3); /* a soft gold line with some transparency */
-  z-index: 0;         /* behind the icons */
-  transform: translateY(-50%);  /* perfectly center on the y-axis */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
-/* Ensure timeline-step (icons) are above the line */
-.timeline-step {
-  position: relative; /* needed to keep above ::before line */
-  z-index: 1;
+/* ------------------------------- */
+/*        MOBILE FIXES BELOW      */
+/* ------------------------------- */
+
+@media (max-width: 768px) {
+  /* Remove yellow timeline line */
+  .timeline-line {
+    display: none !important;
+  }
+
+  /* Stack layout */
+  .timeline-item {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 20px;
+  }
+
+  /* Smaller image */
+  .timeline-item img {
+    width: 130px !important;
+    height: 130px !important;
+    border-radius: 15px;
+  }
+
+  /* Smaller text on mobile */
+  .timeline-title {
+    font-size: 22px !important;
+    line-height: 28px;
+  }
+
+  .timeline-text {
+    font-size: 10px !important;
+    line-height: 22px;
+    opacity: 0.9;
+  }
+}
+
+/* ==============================
+   RESPONSIVE HEADING FIX
+============================== */
+
+/* Default desktop stays same — no change */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .main-heading {
+    font-size: 27px !important;
+    line-height: 40px !important;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 28px !important;
+    line-height: 38px !important;
+    text-align: center;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 25px !important;
+    line-height: 35px !important;
+    text-align: center;
+  }
+  
 }

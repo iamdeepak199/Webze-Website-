@@ -20,16 +20,18 @@
 
 /* MAIN TITLE */
 .main-title {
-  color: 7b7b7b7b;
+  color: #fff;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 60px;
 }
+
 .muted {
-   font-size: 50px;
+  font-size: 50px;
   font-weight: 700;
   margin-bottom: 40px;
 }
+
 /* GRID */
 .features-grid {
   display: flex;
@@ -97,7 +99,11 @@
   font-size: 14px;
 }
 
-/* CENTER IMAGE */
+/* CENTER IMAGE — FIX ADDED */
+.center-image {
+  margin-top: 400px; /* PUSH IMAGE DOWN */
+}
+
 .center-image img {
   width: 100%;
   max-width: 350px;
@@ -127,12 +133,12 @@
 .ex-left {
   display: flex;
   gap: 20px;
-  align-items: flex-start; /* changed from center to flex-start */
+  align-items: flex-start;
 }
 
 .ex-left img {
   width: 60px;
-  flex-shrink: 0; /* prevent icon from shrinking */
+  flex-shrink: 0;
 }
 
 .ex-left div {
@@ -152,7 +158,7 @@
 .ex-left p {
   color: #828282;
   font-size: 14px;
-  margin-top: 4px; /* spacing below h4 */
+  margin-top: 4px;
 }
 
 /* EXCHANGE RIGHT (ICONS) */
@@ -180,6 +186,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .alingment h4 span {
   color: #f5b844;
 }
@@ -187,5 +194,58 @@
 .alingment p {
   color: #828282;
   font-size: 14px;
-  margin-top: 4px; /* spacing below h4 */
+  margin-top: 4px;
+}
+
+/* -----------------------------------------------------
+   MOBILE RESPONSIVE FIX (UPDATED)
+------------------------------------------------------ */
+@media (max-width: 768px) {
+
+  .features-grid {
+    flex-direction: column; 
+    gap: 40px;
+  }
+
+  /* IMAGE FIRST + PUSH DOWN */
+  .center-image {
+    order: 1;
+    text-align: center;
+    margin-top: 120px; /* EVEN LOWER ON MOBILE */
+  }
+
+  .left-items,
+  .right-items {
+    order: 2;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature-box {
+    max-width: 90% !important;
+    text-align: center !important;
+  }
+
+  .feature-box.left .bg-number,
+  .feature-box.right .bg-number {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .exchange-box {
+    order: 3;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .ex-left {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ex-right {
+    justify-content: center;
+  }
 }

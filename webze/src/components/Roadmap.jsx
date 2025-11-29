@@ -21,28 +21,26 @@ export default function ShowcaseSection() {
   ];
 
   const faqData = [
-
-  { 
-    q: "What is PIOGOLD (PIO) and its main purpose?", 
-    a: "PIOGOLD is the native cryptocurrency of Pio Blockchain, used for fast, secure transactions, staking, payments, governance, and Web3 applications." 
-  },
-  { 
-    q: "What is Pio Blockchain?", 
-    a: "Pio Blockchain is a fast, low-cost, and secure decentralized network for building scalable Web3 products." 
-  },
-  { 
-    q: "How does PIOGOLD work on the blockchain?", 
-    a: "PIOGOLD runs on Pio Blockchain, enabling secure payments, staking, governance, and interaction with dApps and NFT marketplaces." 
-  },
-  { 
-    q: "Can I get a refund for PIOGOLD transactions?", 
-    a: "Refunds depend on the platform used, as blockchain transactions are generally irreversible." 
-  }
-];
-
+    { 
+      q: "What is PIOGOLD (PIO) and its main purpose?", 
+      a: "PIOGOLD is the native cryptocurrency of Pio Blockchain, used for fast, secure transactions, staking, payments, governance, and Web3 applications." 
+    },
+    { 
+      q: "What is Pio Blockchain?", 
+      a: "Pio Blockchain is a fast, low-cost, and secure decentralized network for building scalable Web3 products." 
+    },
+    { 
+      q: "How does PIOGOLD work on the blockchain?", 
+      a: "PIOGOLD runs on Pio Blockchain, enabling secure payments, staking, governance, and interaction with dApps and NFT marketplaces." 
+    },
+    { 
+      q: "Can I get a refund for PIOGOLD transactions?", 
+      a: "Refunds depend on the platform used, as blockchain transactions are generally irreversible." 
+    }
+  ];
 
   const timeline = [
-   { year: "2025", text: "Definitions of key terms in cryptocurrency", img: "/images/roadmap_icon01.png" },
+    { year: "2025", text: "Definitions of key terms in cryptocurrency", img: "/images/roadmap_icon01.png" },
     { year: "2026", text: "Automated tools for executing strategies", img: "/images/roadmap_icon02.png" },
     { year: "2027", text: "APIs for developers to build custom tools", img: "/images/roadmap_icon03.png" },
     { year: "2028", text: "A space for users to discuss trends", img: "/images/roadmap_icon04.png" }
@@ -57,19 +55,19 @@ export default function ShowcaseSection() {
         Goods & assets <span>according</span> to <br /> users interests.
       </h2>
 
-      <div className="cards-row">
+      {/* ⭐ New Modern Compact Cards */}
+      <div className="cards-row new-cards">
         {cards.map((c, i) => (
-          <div className="info-card" key={i}>
-
-            <div className="card-img-wrapper">
-              <img src={c.image} alt="" className="card-img" />
+          <div className="new-card" key={i}>
+            <div className="new-card-icon">
+              <img src={c.image} alt="" />
             </div>
 
-            <h3>{c.title}</h3>
-            {/* ⭐ SUBTITLE WITH .muted CLASS */}
-            <p className="muted">{c.subtitle}</p>
+            <h3 className="new-card-title">{c.title}</h3>
 
-            <button className="card-btn">VIEW MORE</button>
+            <p className="new-card-subtitle">{c.subtitle}</p>
+
+            <button className="new-card-btn">VIEW MORE</button>
           </div>
         ))}
       </div>

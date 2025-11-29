@@ -44,7 +44,7 @@ export default function App() {
                 </section>
 
                 <section id="blog">
-                  <Footer /> {/* If you have a Blog component, replace it */}
+                  <Footer /> 
                 </section>
               </>
             }

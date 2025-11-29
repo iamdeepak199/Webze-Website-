@@ -1,10 +1,10 @@
-
 /* Wrapper for fully rounded transparent bar */
 .nav-wrapper {
   width: 96%;
+  max-width: 1200px;
   margin: 20px auto;
   background: #181818;
-  padding: 7px 7px;
+  padding: 5px 10px; /* thinner navbar */
   border-radius: 50px;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
@@ -13,7 +13,7 @@
 .nav-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* logo left, nav right */
 }
 
 /* Brand */
@@ -21,24 +21,39 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0; /* prevent shrinking */
 }
-
-
 
 .brand-text {
   font-size: 20px;
   font-weight: 700;
-  color:rgb(246, 219, 69);
+  color: rgb(246, 219, 69);
+}
+
+/* Logo */
+.logo-mark {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-mark img {
+  width: 150%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Navigation links */
 .nav {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 
 .nav a {
-  color: #fff; /* overrides previous nav colors */
+  color: #fff;
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -47,7 +62,6 @@
   transition: 0.25s;
 }
 
-/* Underline hover effect */
 .nav a::after {
   content: "";
   position: absolute;
@@ -55,7 +69,7 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background: #f5c466; /* new accent for underline */
+  background: #f5c466;
   border-radius: 2px;
   transition: width 0.25s ease;
 }
@@ -68,32 +82,95 @@
   width: 100%;
 }
 
-/* BUY NOW button */
+/* BUY NOW button (desktop default) */
 .btn-buy {
   background: #f6c259;
   border: none;
-  padding: 12px 12px;
+  padding: 8px 20px;
   border-radius: 40px;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
   transition: 0.25s ease;
+  width: 140px;      /* desktop width */
+  max-width: 90%;    /* responsive for small screens */
+  margin: auto;
 }
 
 .btn-buy:hover {
   transform: scale(1.05);
   background: #ffce6d;
 }
-.logo-mark {
-  width: 40px;               
-  height: 40px;
-  padding: 2px 1px 3px 10px;                
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* Hamburger icon hidden by default */
+.hamburger {
+  display: none;
 }
-.logo-mark img {
-  width: 170%;              
-  height: auto;
-  object-fit: contain;
+
+/* -------------------------------------------------- */
+/* MOBILE RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+  /* smaller wrapper */
+  .nav-wrapper {
+    padding: 5px 10px;
+    border-radius: 40px;
+  }
+
+  /* show hamburger */
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  /* hide nav by default */
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #181818;
+    padding: 25px 0;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    z-index: 999;
+  }
+
+  /* show nav when active */
+  .nav.active {
+    display: flex;
+  }
+
+  /* BUY NOW inside mobile menu */
+  .nav .btn-buy {
+    width: 120px;
+    padding: 8px 10px;
+    margin: 0 auto;
+  }
+
+  /* logo smaller */
+  .logo-mark img {
+    width: 100%;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .brand-text {
+    font-size: 16px;
+  }
+}
+
+/* Desktop adjustments */
+@media (min-width: 769px) {
+  .nav .btn-buy {
+    margin-left: 20px;
+    width: auto;
+  }
 }

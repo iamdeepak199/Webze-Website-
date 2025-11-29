@@ -19,40 +19,41 @@ export default function JoinSection() {
       />
 
       {/* Right 3D shape */}
-      <img
-        src="/images/footer_shape01.png"
-        alt="Right floating shape"
-        className="floating-shape right-shape"
-      />
+        {/* Right 3D shape */}
+  <img
+    src="/images/footer_shape01.png"
+    alt="Right floating shape"
+    className="floating-shape right-shape"
+  />
 
-      {/* Center Content */}
-      <div className="content">
-        <p className="small-label">BUILT ON WEB3. POWERED BY YOU</p>
+  {/* Center Content */}
+  <div className="content">
+    <p className="small-label">BUILT ON WEB3. POWERED BY YOU</p>
 
-        <h1 className="main-heading">
-          Join with our <span className="highlight">future</span> of <br />
-          PIOGOLD COIN's
-        </h1>
+    <h1 className="main-heading">
+      Join with our <span className="highlight">future</span> of <br />
+      PIOGOLD COIN's
+    </h1>
 
-        {/* Social Icons */}
-        <div className="social-icons">
-          {socialIcons.map((icon, idx) => (
-            <a
-              key={idx}
-              href="https://facebook.com"
-              aria-label={icon.alt}
-              className="icon-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={icon.src} alt={icon.alt} />
-            </a>
-          ))}
-        </div>
+    {/* Social Icons */}
+    <div className="social-icons">
+      {socialIcons.map((icon, idx) => (
+        <a
+          key={idx}
+          href="https://facebook.com"
+          aria-label={icon.alt}
+          className="icon-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={icon.src} alt={icon.alt} />
+        </a>
+      ))}
+    </div>
 
-        {/* Timeline Step (optional, outside social icons) */}
-        <div className="timeline-step"></div>
-      </div>
-    </section>
+    {/* Timeline Step (optional, outside social icons) */}
+    <div className="timeline-step"></div>
+  </div>
+</section>
   );
 }
