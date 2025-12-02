@@ -187,3 +187,31 @@
     height: 20px;
   }
 }
+/* Plain Text Paragraph */
+.plain-text {
+  font-size: 16px;
+  color: #cfcfcf;
+  line-height: 1.75;
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 10px;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .plain-text {
+    font-size: 14.5px;
+    line-height: 1.65;
+    max-width: 90%;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .plain-text {
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+}

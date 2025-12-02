@@ -28,12 +28,13 @@ export default function JoinSection() {
 
   {/* Center Content */}
   <div className="content">
-    <p className="small-label">BUILT ON WEB3. POWERED BY YOU</p>
+    <p className="small-label">Crafted for Visionaries. Built for Sovereigns. Owned by the Future.</p>
 
     <h1 className="main-heading">
       Join with our <span className="highlight">future</span> of <br />
       PIOGOLD COIN's
     </h1>
+    <p className="plain-text">A complete Web3 financial ecosystem for asset-linked exchange, decentralized investment modules, smart-contract staking treasuries, next-generation publish finance, and gamified economic expansion with real utility economics.</p>
 
     {/* Social Icons */}
     <div className="social-icons">

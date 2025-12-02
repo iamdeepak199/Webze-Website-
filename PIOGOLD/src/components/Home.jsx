@@ -6,18 +6,18 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="container hero-inner">
-        <div className="hero-badge">BUILT ON WEB3. POWERED BY YOU</div>
-
-      <h1 className="hero-title">
+        <div className="hero-badge">BUILT ON WEB3. POWERED BY REAL-WORLD VALUE</div><br></br>
+<br></br>
+      <h6 className="hero-title">
   The <span className="muted">future</span> of
   <br />
-  Crypto is here
-</h1>
+  of Digital Finance Has Arrived
+</h6>
 
 <br></br>
         <p className="hero-sub">
-          a Gold backend native coin of PIOGOLD blockchain with
-          <br /> complete advanced ecosystem.
+          A Sovereign, 24-Carat Gold-Backed Native Coin on the Piogold Blockchain Engineered for Real Market Power, Legacy-Grade Trust, and Global Adoption.
+          <br />
         </p>
 
         <form className="hero-form" onSubmit={(e) => e.preventDefault()}>

@@ -23,7 +23,6 @@ export default function Navbar() {
     <header className="site-header">
       <div className="nav-wrapper">
         <div className="container nav-inner">
-
           {/* BRAND */}
           <div className="brand">
             <div className="logo-mark">
@@ -48,27 +47,34 @@ export default function Navbar() {
 
           {/* NAVIGATION */}
           <nav className={`nav ${menuOpen ? "active" : ""}`}>
-
-            <Link smooth to="#home">HOME</Link>
-            <Link smooth to="#features">FEATURES</Link>
-            <Link smooth to="#token">TOKEN</Link>
-            <Link smooth to="#how">HOW IT WORKS</Link>
-            <Link smooth to="#roadmap">ROADMAP</Link>
+            <Link smooth to="#home">
+              HOME
+            </Link>
+            <Link smooth to="#features">
+              FEATURES
+            </Link>
+            <Link smooth to="#token">
+              TOKEN
+            </Link>
+            <Link smooth to="#how">
+              HOW IT WORKS
+            </Link>
+            <Link smooth to="#roadmap">
+              ROADMAP
+            </Link>
 
             {/* ECOSYSTEM DROPDOWN */}
             <div
               className="dropdown"
               onClick={() => setEcosystemOpen(!ecosystemOpen)}
             >
-              <span className="drop-btn">
-                Ecosystem▾
-              </span>
+              <span className="drop-btn">Ecosystem▾</span>
 
               <div className={`dropdown-menu ${ecosystemOpen ? "open" : ""}`}>
-                <Link to="#blockchain">Blockchain</Link>
-                <Link to="#nft">NFT Market</Link>
-                <Link to="#token-tools">Token Tool</Link>
-                <Link to="#bridge">Bridge</Link>
+                <Link to="https://pioscan.com">Blockchain</Link>
+                <Link to="https://pioverse.com/">NFT Market</Link>
+                <Link to="https://tokentool-token.piodefi.com/">Token Tool</Link>
+                <Link to="bridge.pioswap.finance">Bridge</Link>
                 <Link to="#foundation">CCF Foundation</Link>
               </div>
             </div>

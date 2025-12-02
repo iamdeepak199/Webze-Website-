@@ -44,7 +44,7 @@ export default function App() {
                 </section>
 
                 <section id="blog">
-                  <Footer /> 
+                  <Footer />
                 </section>
               </>
             }
@@ -53,14 +53,17 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-        <ScrollToTop />
+      <ScrollToTop />
 
       <div className="vertical-line"></div>
 
       <footer className="site-footer">
         Copyright & design by{" "}
-        <span className="color-text">@PIOGOLD COIN - 2025</span>
+        <span className="color-text">
+          @PIOGOLD BLOCKCHAIN ECOSYSTEM © 2025 <br />
+        </span>
       </footer>
+
       <br />
     </div>
   );

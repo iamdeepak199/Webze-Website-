@@ -63,11 +63,14 @@
   font-weight: 700;
 }
 
+/* ------------------------------------
+   UPDATED SMALLER H1
+------------------------------------ */
 .hero-title {
-  font-size: 58px;
-  line-height: 1.05;
+  font-size: 10px;      /* updated */
+  line-height: 0.15;
   margin: 6px 0 10px;
-  font-weight: 800;
+  font-weight: 80;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -79,7 +82,7 @@
   color: #a8a8a8;
   max-width: 780px;
   margin: 12px auto 24px;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.5;
 }
 
@@ -168,12 +171,12 @@
   }
 
   .hero-title {
-    font-size: 32px;
-    line-height: 1.15;
+    font-size: 24px;    /* updated */
+    line-height: 1.25;
   }
 
   .hero-title .muted {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .hero-sub {
@@ -229,7 +232,7 @@
 ------------------------------------ */
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 26px;
+    font-size: 18px;    /* updated (fixed tiny size) */
   }
 
   .hero-sub {

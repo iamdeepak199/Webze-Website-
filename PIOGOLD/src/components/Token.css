@@ -166,3 +166,162 @@
   text-align: center;
   word-break: break-all;
 }
+/* ===========================
+   RESPONSIVE — TABLET
+   =========================== */
+@media (max-width: 992px) {
+  .promo-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .promo-left h2 {
+    font-size: 30px;
+  }
+
+  .promo-left h3 {
+    font-size: 22px;
+  }
+
+  .promo-left p {
+    font-size: 15px;
+  }
+
+  .timer {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .time-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .promo-card {
+    width: 90%;
+    max-width: 450px;
+  }
+}
+
+/* ===========================
+   RESPONSIVE — MOBILE
+   =========================== */
+@media (max-width: 768px) {
+  
+  /* Section padding */
+  .promo-section {
+    padding: 50px 0;
+  }
+
+  /* Container collapses */
+  .promo-container {
+    flex-direction: column;
+    gap: 50px;
+    width: 95%;
+  }
+
+  /* Left side text */
+  .promo-left h2 {
+    font-size: 26px;
+  }
+
+  .promo-left h3 {
+    font-size: 18px;
+  }
+
+  .promo-left p {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 20px;
+  }
+
+  /* List spacing */
+  .promo-left ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .promo-left ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  /* Button */
+  .cta-button {
+    width: 50%;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  /* Right card */
+  .promo-card {
+    width: 100%;
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  /* Timer circles on mobile */
+  .timer {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .time-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .time-circle h2 {
+    font-size: 18px;
+  }
+
+  .time-circle p {
+    font-size: 10px;
+  }
+
+  /* Contribution labels */
+  .progress-labels span {
+    font-size: 11px;
+  }
+
+  /* Wallet address */
+  .wallet-address {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* ===========================
+   EXTRA SMALL DEVICES (Phones)
+   =========================== */
+@media (max-width: 480px) {
+
+  .promo-left h2 {
+    font-size: 22px;
+  }
+
+  .promo-left h3 {
+    font-size: 16px;
+  }
+
+  .promo-left p,
+  .promo-left ul li {
+    font-size: 13px;
+  }
+
+  .time-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .time-circle h2 {
+    font-size: 16px;
+  }
+
+  .promo-card {
+    padding: 25px 15px;
+  }
+}
